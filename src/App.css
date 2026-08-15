@@ -1,0 +1,217 @@
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--text-secondary);
+}
+
+/* Auth */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+  gap: 16px;
+}
+
+.auth-title {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.auth-form h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.auth-form input {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+}
+
+.auth-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.auth-form button:hover {
+  background: var(--accent-hover);
+}
+
+.auth-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.auth-error {
+  color: var(--danger);
+  font-size: 13px;
+  margin: 0;
+}
+
+.auth-info {
+  color: var(--accent);
+  font-size: 13px;
+  margin: 0;
+}
+
+.auth-switch {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 14px;
+}
+
+/* Timeline */
+.timeline-container {
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  min-height: 100vh;
+}
+
+.timeline-header {
+  position: sticky;
+  top: 0;
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.timeline-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.timeline-user button {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+.tweet-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tweet-form textarea {
+  resize: none;
+  min-height: 70px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+}
+
+.tweet-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.tweet-form-count {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.tweet-form-footer button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.tweet-form-footer button:hover {
+  background: var(--accent-hover);
+}
+
+.tweet-form-footer button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.tweet-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tweet-item {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tweet-item-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.tweet-username {
+  font-weight: 700;
+}
+
+.tweet-date {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.tweet-content {
+  margin: 0 0 6px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.tweet-delete {
+  border: none;
+  background: none;
+  color: var(--danger);
+  font-size: 13px;
+  padding: 0;
+}
